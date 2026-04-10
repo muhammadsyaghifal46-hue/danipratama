@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Tour & Travel - Jelajahi Dunia Bersama Kami</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <h2>Dream Tour & Travel</h2>
+      <p>Menyiapkan perjalanan terbaik untuk Anda...</p>
+    </div>
+  </div>
+
+  <!-- POPUP PROMO -->
+  <div id="promoPopup" class="promo-popup">
+    <div class="promo-box">
+      <button class="close-promo" id="closePromo">&times;</button>
+      <h2>🎉 Promo Spesial Liburan!</h2>
+      <p>Dapatkan diskon hingga <strong>25%</strong> untuk pemesanan minggu ini!</p>
+      <a href="#booking" class="promo-btn">Pesan Sekarang</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <h1 class="logo">Dream<span>Tour</span></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#paket">Paket</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <button id="darkModeToggle" class="dark-btn">🌙</button>
+    </nav>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text reveal">
+      <h2>Jelajahi Dunia Bersama Kami</h2>
+      <p>Liburan nyaman, aman, seru, dan tak terlupakan bersama Dream Tour & Travel</p>
+      <div class="hero-buttons">
+        <a href="#paket" class="btn">Lihat Paket</a>
+        <a href="#booking" class="btn btn-outline">Booking Sekarang</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- TENTANG KAMI -->
+  <section id="tentang" class="about section">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <h2>Tentang Kami</h2>
+        <p>
+          Dream Tour & Travel adalah layanan perjalanan wisata yang menyediakan berbagai paket liburan
+          domestik dan internasional dengan harga terjangkau, pelayanan profesional, dan pengalaman
+          wisata yang menyenangkan.
+        </p>
+        <p>
+          Kami berkomitmen memberikan perjalanan yang aman, nyaman, dan berkesan melalui itinerary terbaik,
+          akomodasi berkualitas, transportasi terpercaya, dan tim tour guide yang ramah.
+        </p>
+        <div class="about-points">
+          <div class="point">✔ Harga Terjangkau</div>
+          <div class="point">✔ Destinasi Favorit</div>
+          <div class="point">✔ Tour Guide Profesional</div>
+          <div class="point">✔ Pelayanan Fast Response</div>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <h3>Kenapa Pilih Kami?</h3>
+        <ul>
+          <li>⭐ Paket lengkap & fleksibel</li>
+          <li>⭐ Bisa custom trip sesuai kebutuhan</li>
+          <li>⭐ Booking mudah via WhatsApp</li>
+          <li>⭐ Banyak promo menarik setiap bulan</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER PAKET -->
+  <section class="filter-section section">
+    <div class="container reveal">
+      <h2>Temukan Paket Wisata Favoritmu</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="domestik">Domestik</button>
+        <button class="filter-btn" data-filter="pantai">Pantai</button>
+        <button class="filter-btn" data-filter="budaya">Budaya</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKET WISATA -->
+  <section id="paket" class="packages section">
+    <div class="container">
+      <h2 class="reveal">Paket Wisata Favorit</h2>
+      <div class="cards">
+
+        <!-- BALI -->
+        <div class="card reveal" data-category="domestik pantai">
+          <img src="img/bali.jpg" alt="Bali">
+          <div class="card-content">
+            <h3>Bali Paradise Trip</h3>
+            <p class="duration">3 Hari 2 Malam</p>
+            <p class="desc">
+              Nikmati keindahan Pantai Kuta, Tanah Lot, Garuda Wisnu Kencana, serta pengalaman sunset romantis dan wisata budaya khas Bali.
+            </p>
+            <div class="includes">
+              <span>Hotel</span>
+              <span>Transport</span>
+              <span>Guide</span>
+            </div>
+            <span class="price">Rp 3.000.000</span>
+            <div class="trip-actions">
+              <button class="btn small-btn lokasi-btn" data-location="Bali - Pantai Kuta, Tanah Lot, GWK">📍 Lihat Lokasi</button>
+              <a href="https://wa.me/6288216385330?text=Halo%20Dream%20Tour,%20saya%20ingin%20booking%20paket%20Bali%20Paradise%20Trip" target="_blank" class="btn small-btn">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- JOGJA -->
+        <div class="card reveal" data-category="domestik budaya">
+          <img src="img/candi.webp" alt="Yogyakarta">
+          <div class="card-content">
+            <h3>Jogja Heritage Tour</h3>
+            <p class="duration">2 Hari 1 Malam</p>
+            <p class="desc">
+              Jelajahi Candi Prambanan Malioboro Keraton Yogyakarta dan wisata kuliner legendaris dengan suasana budaya yang khas.
+            </p>
+            <div class="includes">
+              <span>Hotel</span>
+              <span>Kuliner</span>
+              <span>Guide</span>
+            </div>
+            <span class="price">Rp 1.500.000</span>
+            <div class="trip-actions">
+              <button class="btn small-btn lokasi-btn" data-location="Yogyakarta - Malioboro, Keraton, Prambanan">📍 Lihat Lokasi</button>
+              <a href="https://wa.me/6288216385330?text=Halo%20Dream%20Tour,%20saya%20ingin%20booking%20paket%20Jogja%20Heritage%20Tour" target="_blank" class="btn small-btn">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- LOMBOK -->
+        <div class="card reveal" data-category="domestik pantai">
+          <img src="img/lombok.jpg" alt="Lombok">
+          <div class="card-content">
+            <h3>Lombok Exotic Escape</h3>
+            <p class="duration">4 Hari 3 Malam</p>
+            <p class="desc">
+              Rasakan pesona Pantai Senggigi Gili Trawangan Bukit Merese dan pengalaman island hopping yang seru menenangkan dengan suasana lombok city light.
+            </p>
+            <div class="includes">
+              <span>Hotel</span>
+              <span>Boat Trip</span>
+              <span>Guide</span>
+            </div>
+            <span class="price">Rp 4.000.000</span>
+            <div class="trip-actions">
+              <button class="btn small-btn lokasi-btn" data-location="Lombok - Senggigi, Gili Trawangan, Bukit Merese">📍 Lihat Lokasi</button>
+              <a href="https://wa.me/6288216385330?text=Halo%20Dream%20Tour,%20saya%20ingin%20booking%20paket%20Lombok%20Exotic%20Escape" target="_blank" class="btn small-btn">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BANDUNG -->
+        <div class="card reveal" data-category="domestik budaya">
+          <img src="img/bandung.jpg" alt="Bandung">
+          <div class="card-content">
+            <h3>Bandung City Escape</h3>
+            <p class="duration">2 Hari 1 Malam</p>
+            <p class="desc">
+              Nikmati udara sejuk Bandung wisata kuliner Farm House Lembang dan belanja fashion di pusat kota sampai sepuasnya dengan suasana bandung.
+            </p>
+            <div class="includes">
+              <span>Hotel</span>
+              <span>Transport</span>
+              <span>Kuliner</span>
+            </div>
+            <span class="price">Rp 1.800.000</span>
+            <div class="trip-actions">
+              <button class="btn small-btn lokasi-btn" data-location="Bandung - Lembang, Farm House, Braga">📍 Lihat Lokasi</button>
+              <a href="https://wa.me/6288216385330?text=Halo%20Dream%20Tour,%20saya%20ingin%20booking%20paket%20Bandung%20City%20Escape" target="_blank" class="btn small-btn">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOKASI INFO -->
+  <section class="location-info section">
+    <div class="container reveal">
+      <h2>Informasi Lokasi Destinasi</h2>
+      <div id="locationDisplay" class="location-box">
+        Klik tombol <strong>“Lihat Lokasi”</strong> pada paket wisata untuk melihat detail destinasi.
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri" class="gallery section">
+    <div class="container">
+      <h2 class="reveal">Galeri Perjalanan</h2>
+      <div class="gallery-grid">
+        <img class="reveal" src="img/bali.jpg" alt="Galeri Bali">
+        <img class="reveal" src="img/malioboro.png" alt="Galeri Jogja">
+        <img class="reveal" src="img/bandung malam.jpg" alt="Galeri Lombok">
+        <img class="reveal" src="img/bandung.jpg" alt="Galeri Bandung">
+        <img class="reveal" src="img/laut lombok.jpeg" alt="Galeri Travel 1">
+        <img class="reveal" src="img/pantai dewata.jpeg" alt="Galeri Travel 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section id="testimoni" class="testimonials section">
+    <div class="container">
+      <h2 class="reveal">Apa Kata Pelanggan?</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <p>"Pelayanannya sangat ramah dan trip ke Bali sangat menyenangkan. Recommended banget!"</p>
+          <h4>- Ghifal, Kedungwuni</h4>
+        </div>
+        <div class="testimonial-card reveal">
+          <p>"Booking mudah via WhatsApp, harga terjangkau, dan itinerary lengkap. Mantap!"</p>
+          <h4>- Dani Pratama, Batang</h4>
+        </div>
+        <div class="testimonial-card reveal">
+          <p>"Liburan keluarga ke Lombok jadi lebih praktis dan nyaman. Terima kasih DreamTour!"</p>
+          <h4>- Karizmatul Azizah, Subah</h4>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-form-box reveal">
+  <h3>Kirim Pesan / Kritik / Saran</h3>
+  <form id="testimonialForm" class="testimonial-form">
+    <input type="text" id="customerName" placeholder="Nama Anda" required>
+    <input type="text" id="customerCity" placeholder="Kota Asal" required>
+    <textarea id="customerMessage" rows="4" placeholder="Tulis pesan, kritik, atau saran..." required></textarea>
+    <button type="submit" class="btn">Kirim Testimoni</button>
+  </form>
+</div>
+  </section>
+
+  <!-- FORM BOOKING -->
+  <section id="booking" class="booking section">
+    <div class="container">
+      <h2 class="reveal">Form Booking Wisata</h2>
+      <form id="bookingForm" class="booking-form reveal">
+        <input type="text" id="nama" placeholder="Nama Lengkap" required>
+        <input type="tel" id="telepon" placeholder="Nomor WhatsApp" required>
+        <select id="paketPilihan" required>
+          <option value="">Pilih Paket Wisata</option>
+          <option value="Bali Paradise Trip">Bali Paradise Trip</option>
+          <option value="Jogja Heritage Tour">Jogja Heritage Tour</option>
+          <option value="Lombok Exotic Escape">Lombok Exotic Escape</option>
+          <option value="Bandung City Escape">Bandung City Escape</option>
+        </select>
+        <input type="date" id="tanggal" required>
+        <input type="number" id="jumlah" placeholder="Jumlah Peserta" min="1" required>
+        <textarea id="catatan" rows="4" placeholder="Catatan tambahan (opsional)"></textarea>
+        <button type="submit" class="btn">Kirim Booking via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+  <!-- KONTAK -->
+  <section id="kontak" class="contact-section section">
+    <div class="container">
+      <h2 class="reveal">Hubungi Kami</h2>
+      <p class="reveal">Silakan hubungi kami untuk informasi lebih lanjut dan pemesanan paket wisata.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h3>Informasi Kontak</h3>
+          <!-- Pastikan Font Awesome sudah ditambahkan di <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<p>
+  <i class="fas fa-map-marker-alt" style="color:#ff4d4d; margin-right:8px;"></i>
+  <strong></strong> Sengon, Kec. Subah, Kabupaten Batang, Jawa Tengah 51262, Indonesia
+</p>
+
+<p>
+  <i class="fas fa-phone" style="color:#1e90ff; margin-right:8px;"></i>
+  <strong></strong> <a href="tel:+62 882-1638-5330">+62 882-1638-5330</a>
+</p>
+
+<p>
+  <i class="fas fa-envelope" style="color:#ff8c00; margin-right:8px;"></i>
+  <strong></strong> <a href="mailto:travelku@gmail.com">travelku@gmail.com</a>
+</p>
+          <div class="contact-buttons">
+            <a href="https://wa.me/6288216385330" target="_blank" class="btn-wa">Chat WhatsApp</a>
+            <a href="mailto:travelku@gmail.com" class="btn-email">Kirim Email</a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal">
+          <h3>Lokasi Kami</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1775700683008!6m8!1m7!1sjV12ZFsiaigFdkXMkCzjmQ!2m2!1d-6.949788188370013!2d109.8375693732716!3f176.34334144591952!4f0.9199810320761088!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Dream Tour & Travel</h3>
+        <p>Partner perjalanan terbaik untuk liburan seru, nyaman, dan penuh kenangan indah.</p>
+      </div>
+      <div>
+        <h4>Menu Cepat</h4>
+        <ul>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#paket">Paket Wisata</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p>📞 +62 882-1638-5330</p>
+        <p>📧 travelku@gmail.com</p>
+        <p>📍 Indonesia</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Dream Tour & Travel | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
